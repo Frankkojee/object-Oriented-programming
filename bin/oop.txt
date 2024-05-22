@@ -1,0 +1,55 @@
+classes have the blue print of the objects
+a class has methods that define the characteristics
+class Bicycle{
+    int speed=0;
+    int gear=1;
+    //methods and fields defining a bicycle class
+    void changeGear(int newGear){
+        changeGear=newGear;
+    }
+    void speedUp(int increment){
+        speedUp=speed-increment;
+    }
+    void speedDown(int decrement){
+        speedDown=speedDown+decrement;
+    }
+}
+that is the blueprint for a bicycle that has gears and can increase or decrease speed
+objects
+when 2 bicycles are moving at different speeds, we create two objects of those values
+Bicycle bike1=new Bicycle();
+Bicycle bike2=new Bicycle();
+
+invoking the methods of the bicycle class with the new objects to show their states
+bike1.speedUp(10);
+bike2.speedDown(20);
+//all these are called in the main methods
+inheritance
+each class is allowed to have one direct superclass 
+a superclass is allowed to have infinitely many subclasses
+a bicycle has many types, a RoadBike, TandemBike
+RoadBike and TandemBike are subclasses of Bicycle class 
+to create a subclass, use the word extends 
+subclass extends superclass
+class MountainBike extends Bicycle {
+    //new fields and methods defining a mountain bike
+    //allows a mountain bike to have all same fields as a bicycle but allow it to extensively focus on the features unique to it
+}
+interfaces
+they are a group of related methods with empty bodies
+an interface defining the bicycles behaviour may appear as follows
+interface bicycle{
+    //wheel revolutions per minute
+    void changeCadence(int newValue);
+    void changeGear(int newValue);
+    void speedUp(int increment);
+}
+class TDMbicycle{
+    int cadence=0;
+    int gear=1;
+    int speed=0;
+    void methods in the interface
+}
+packages
+set of related classes and interfaces
+allows the programmer to focus on the application rather than the functionality of the code
